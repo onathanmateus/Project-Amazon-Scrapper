@@ -6,7 +6,7 @@ buttonElement.addEventListener("click", async () => {
   // Guardar na variável qual palavra foi digitada | Save which word was typed in the variable
   const keyword = keywordElement.value
   // Requisição à API | API request
-  const response = await fetch(`/api/scrape${keyword}`)
+  const response = await fetch(`/api/scrape?keyword=${keyword}`)
   const products = await response.json()
   // Limpando da tela o que foi mostrado anteriormente | Wiping what was previously shown from the screen
   resultsElement.innerHTML = ""
