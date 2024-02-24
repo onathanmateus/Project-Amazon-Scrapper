@@ -11,11 +11,5 @@ buttonElement.addEventListener("click", async () => {
   // Limpando da tela o que foi mostrado anteriormente | Wiping what was previously shown from the screen
   resultsElement.innerHTML = ""
   // Exibindo os resultados na tela | Displaying the results on the screen
-  resultsElement.innerHTML = products.map(product => `
-    <div class="product">
-      <h1 class="product-title">${product.title}</h1>
-      <img src="${product.image}" />
-      <p class="product-information">Avaliação: ${product.rating} estrelas (${product.reviews})</p>
-    </div>
-  `).join('');
+  console.log(products)
 }) 
