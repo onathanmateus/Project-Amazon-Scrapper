@@ -1,8 +1,12 @@
 const express = require("express");
 const axios = require("axios");
 const cheerio = require("cheerio");
+const cors = require("cors");
 
 const app = express();
+
+// Permitir solicitações de origens diferentes usando CORS | Allow requests from different sources using CORS
+app.use(cors());
 
 app.get("/api/scrape", async (req, res) => {
   // Guardando na variável a keyword que foi enviada como requisição | Storing the keyword that was sent in the variable 
