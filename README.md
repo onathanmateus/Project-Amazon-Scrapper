@@ -80,7 +80,7 @@ Go to this website "https://git-scm.com/" and install the Git. <br> Then open th
     ```sh	
     npm run dev 
     ```
-If everything went as it should the project will be running on port 3333 on localhost. <br> <br> Open the "index.html" in the browser, add the following characters at the end of the url in the browser "?#", you should see something like this in the url: (file:///C:/Users/natha/Desktop/Project-Amazon-Scrapper/index.html?#) <br> <br> And run the tests. 
+If everything went as it should the project will be running on port 3333 on localhost. <br> <br> Open the "index.html" in the browser, add the following characters at the end of the url in the browser "?#", you should see something like this in the url: (file:///C:/Users/natha/Desktop/Project-Amazon-Scrapper/index.html?#) <br> <br> And search for everything !! 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
