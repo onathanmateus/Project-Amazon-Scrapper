@@ -30,7 +30,8 @@ app.get("/api/scrape", async (req, res) => {
   let formattedProducts = [];
   products.each((index, product) => {
     const title = $(product).find("h2 a span").text().trim();
-    const rating = $(product).find(".a-icon-alt").text().replace(/[^0-9.]/g, "").trim();
+    let rating = $(product).find(".a-icon-alt").text().replace(/[^0-9.]/g, "").trim();
+    rating = rating/100
     const reviews = $(product).find(".a-link-normal  .a-size-base").text().replace(/[^0-9]/g, "").trim();
     const image = $(product).find(".s-image").attr("src");
     if(title){
