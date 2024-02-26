@@ -17,7 +17,7 @@ export const mock =
       "image": "https://m.media-amazon.com/images/I/81FFCoft1PL._AC_UL320_.jpg"
     },
     {
-      "title": "Apple iPhone 11 (64 GB) (PRODUCT) RED",
+      "title": "Apple iPhone 11 (64 GB) (PRODUCT) RED",
       "rating": "495",
       "reviews": "2823",
       "image": "https://m.media-amazon.com/images/I/715HCLsOHbL._AC_UL320_.jpg"
