@@ -9,7 +9,7 @@ buttonElement.addEventListener("click", async () => {
 
     // Requisição à API | API request
     const response = await fetch(`http://localhost:3333/api/scrape?keyword=${keyword}`);
-    
+
     // Verificando se a resposta foi ok | Checking that the answer was ok
     if (!response.ok) {
       throw new Error('Failed to fetch data');
@@ -47,7 +47,3 @@ buttonElement.addEventListener("click", async () => {
     console.error('Error fetching data:', error);
   }
 }) 
-
-
-// Requisição à API | API request
-
