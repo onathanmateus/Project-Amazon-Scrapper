@@ -80,7 +80,7 @@ Go to this website "https://git-scm.com/" and install the Git. <br> Then open th
     ```sh	
     npm run dev 
     ```
-If everything went as it should, the project will be running on port 3333 on localhost, open the "index.html" in the browser !
+If everything went as it should the project will be running on port 3333 on localhost, open the "index.html" in the browser !
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
