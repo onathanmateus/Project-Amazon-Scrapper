@@ -1,4 +1,4 @@
-/* PRE-DEFINIÇÃO GLOBAL */
+/* PRE-DEFINIÇÃO GLOBAL | GLOBAL PRE-DEFINITION */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +23,7 @@
   gap: 3rem;
   flex-direction: column;
 }
-/* HEADER */
+/* CABEÇALHO | HEADER */
 #header {
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
 #description {
   line-height: 2rem;
 }
-/* FORM */
+/* FORMULÁRIO | FORM */
 #form {
   display: flex;
   gap: 2rem;
@@ -71,12 +71,12 @@
 #search:hover {
   background-color:#408c99;
 }
-/* RESPONSIVO */
+/* RESPONSIVO | RESPONSIVE */
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
-  /* FORM */
+  /* FORMULÁRIO | FORM */
   #form {
     flex-direction: column;
   }
@@ -85,7 +85,7 @@
   .container {
     max-width: 768px;
   }
-  /* FORM */
+  /* FORMULÁRIO | FORM */
   #keyword {
     width: 40%;
   }
@@ -102,11 +102,51 @@
   .container {
     max-width: 1280px;
   }
-  /* FORM */
+  /* FORMULÁRIO | FORM */
   #keyword {
     width: 30%;
   }
   #search {
     width: 30%;
   }
+}
+/* CARD DO PRODUTO | PRODUCT CARD */
+.product-card {
+  border: 1px solid #f5f5f5;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  border-radius: 5px;
+}
+.product-card h3 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.product-card p {
+  width: 100%;
+  padding: 3px;
+  text-align: left !important;
+}
+.product-card img {
+  width: 237px;
+  height: 237px;
+  object-fit: contain;
+  padding: 5px;
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
