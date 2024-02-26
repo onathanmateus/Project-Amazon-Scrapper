@@ -16,15 +16,14 @@ buttonElement.addEventListener("click", async () => {
     }
 
     // Guardando as informações retornadas em uma variável | Storing the information returned in a variable
-    const products = await response.json();
+    const { formattedProducts } = await response.json();
 
     // Limpando da tela o que foi mostrado anteriormente | Wiping what was previously shown from the screen
     resultsElement.innerHTML = "";
 
-    // Criando uma variável para guardar os produtos | Creating a variable to store the products
-    const productsList = [];
-    products.forEach(product => {
-      productsList.push(`
+    // Exibindo os resultados na tela | Displaying the results on the screen
+    formattedProducts.forEach(product => {
+      const productHTML = `
         <div class="product-card">
           <div class="image-container">
             <img src="${product.image}" alt="Imagem do produto" />
@@ -33,16 +32,11 @@ buttonElement.addEventListener("click", async () => {
           <p>Avaliação: 🌟 ${product.rating}</p>
           <p>Número de avaliações: ${product.reviews}</p>
         </div>
-      `);
-    });
-
-    // Exibindo os resultados na tela | Displaying the results on the screen
-    productsList.forEach(product => {
+      `;
       const item = document.createElement('div');
-      item.innerHTML = product;
+      item.innerHTML = productHTML;
       resultsElement.appendChild(item);
     });
-
   } catch (error) {
     console.error('Error fetching data:', error);
   }
